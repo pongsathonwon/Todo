@@ -31,7 +31,7 @@ public class TodoController: ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, <TodoItem> todo)
+    public IActionResult Update(int id, TodoItem todo)
     {
         if(id != todo.Id)
             return BadRequest();
